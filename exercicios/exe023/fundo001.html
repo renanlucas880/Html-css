@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadrados Centralizados</title>
+    <style>
+        body {
+            background-image:linear-gradient(to bottom,blue,white);
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        div.quadrado {
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: blanchedalmond;
+            width: 300px;
+            height: 300px;
+            margin: 0 10px; /* espaçamento entre os quadrados */
+            transition: all 0.3s ease;
+        }
+        div.quadrado:hover{
+            transform: scale(1.05);
+        }
+
+
+         div#q1{
+            box-shadow:0 0 20px rgba(0, 17, 255, 0.625);
+            background-image: linear-gradient(to top, blue,white);
+
+        }
+
+        div#q2{
+            box-shadow: 0 0 20px rgba(255, 255, 0, 0.777);
+            background-image:linear-gradient(to bottom,yellow,red);
+
+        }
+
+        div#q3{
+            box-shadow: 0 0 20px red;
+            background-image: url(imagens/wallpaper005.jpg);
+
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Três Quadrados Centralizados</h1>
+    
+    <div class="container">
+        <div class="quadrado" id="q1"></div>
+        <div class="quadrado" id="q2"></div>
+        <div class="quadrado" id="q3"></div>
+    </div>
+</body>
+</html>
